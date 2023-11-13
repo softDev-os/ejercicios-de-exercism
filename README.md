@@ -10,7 +10,12 @@ Este repositorio documenta mi progreso y aprendizaje mientras trabajo en ejercic
 
 ## ¿Cómo Empezar?
 
-1. Clona este repositorio: `git clone https://github.com/softDev-os/ejercicios-de-exercism.git`
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/softDev-os/ejercicios-de-exercism.git
+   ```
+
 2. Explora las carpetas para ver las soluciones a cada ejercicio.
 3. ¡Aprende y mejora tu lógica de programación!
 
