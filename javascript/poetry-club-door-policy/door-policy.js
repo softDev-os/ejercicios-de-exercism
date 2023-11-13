@@ -55,7 +55,7 @@ export function backDoorResponse(line) {
   const lastLetter = rest.charAt(rest.length - 1);
   return lastLetter;
 }
-
+//NOTE: I don't know why this is not working
 /**
  * Format the password for the back door, given the response
  * letters.

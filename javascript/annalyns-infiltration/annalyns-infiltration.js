@@ -57,7 +57,6 @@ export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
   const signalPossible = !archerIsAwake && prisonerIsAwake;
   return signalPossible;
 }
-
 /**
  * The final stage in the plan: freeing Annalyn's best friend.
  *

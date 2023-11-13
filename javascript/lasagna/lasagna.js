@@ -29,9 +29,11 @@
 // work with the tests, which you can find in ./lasagna.spec.js
 //
 // Good luck preparing some lasagna!
+
 /**
  * The number of minutes it takes to prepare a single layer.
  */
+
 export const EXPECTED_MINUTES_IN_OVEN = 40;
 /**
  * Determines the number of minutes the lasagna still needs to remain in the
@@ -42,16 +44,20 @@ export const EXPECTED_MINUTES_IN_OVEN = 40;
  */
 
 export function remainingMinutesInOven(actualMinutesInOven) {
+  // Verifica si el argumento es un número positivo
   if (typeof actualMinutesInOven !== "number" || actualMinutesInOven < 0) {
     throw new Error(
       "Por favor, proporciona un valor válido para los minutos en el horno.",
     );
   }
+
   // Calcula los minutos restantes
   const remainingMinutes = EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven;
   let remaing = remainingMinutes > 0 ? remainingMinutes : 0;
+  // Devuelve los minutos restantes
   return remaing;
 }
+
 /**
  * Given a number of layers, determines the total preparation time.
  *
@@ -59,18 +65,22 @@ export function remainingMinutesInOven(actualMinutesInOven) {
  * @returns {number} the total preparation time
  */
 export function preparationTimeInMinutes(numberOfLayers) {
-  typeof numberOfLayers !== "number" || numberOfLayers < 0
-    ? (() => {
-      throw new Error(
-        "Por favor, proporciona un valor válido para los minutos en el horno.",
-      );
-    })()
-    : null;
-
+  // Verifica si el argumento es un número positivo
+  if (typeof numberOfLayers !== "number" || numberOfLayers <= 0) {
+    throw new Error(
+      "Por favor, proporciona un número válido y positivo de capas.",
+    );
+  }
+  // Define el tiempo de preparación por capa
   const TIME_PER_LAYER = 2;
+
+  // Calcula el tiempo total de preparación
   const totalTime = numberOfLayers * TIME_PER_LAYER;
+
+  // Devuelve el tiempo total
   return totalTime;
 }
+
 /**
  * Calculates the total working time. That is, the time to prepare all the layers
  * of lasagna, and the time already spent in the oven.
@@ -81,7 +91,11 @@ export function preparationTimeInMinutes(numberOfLayers) {
  */
 
 export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
+  // Calculate the preparation time
   const preparationTime = preparationTimeInMinutes(numberOfLayers);
+
+  // Calculate the total working time by summing preparation time and oven time
   const totalWorkingTime = preparationTime + actualMinutesInOven;
+
   return totalWorkingTime;
 }
