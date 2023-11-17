@@ -7,6 +7,10 @@ Este repositorio documenta mi progreso y aprendizaje mientras trabajo en ejercic
 ## Carpetas de Ejercicios
 
 - [Javascript](https://github.com/softDev-os/ejercicios-de-exercism/tree/main/javascript)
+- [Typescript](https://github.com/softDev-os/ejercicios-de-exercism/tree/main/typescript)
+- [Python](https://github.com/softDev-os/ejercicios-de-exercism/tree/main/python)
+- [Go](https://github.com/softDev-os/ejercicios-de-exercism/tree/main/go)
+- [PHP](https://github.com/softDev-os/ejercicios-de-exercism/tree/main/php)
 
 ## ¿Cómo Empezar?
 
